@@ -56,11 +56,12 @@ public abstract class GeneticAlgorithm <C extends Candidate> {
 	 * 		d - crossover and mutate selected candidates
 	 */
 	public final void run() {
-		C candidate1, candidate2;
+		C candidate1;
+		C candidate2;
 		C bestCandidate;
-		int candidatesSize;
-		double fitness;
 		C newCandidate;
+		double fitness;
+		int candidatesSize;
 		
 		// Step a: create initial generation of random candidates
 		createInitialGeneration();
